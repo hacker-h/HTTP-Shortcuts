@@ -203,6 +203,16 @@
 
                 <data android:scheme="http-shortcuts" />
             </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.misc.deeplink.NfcDispatchActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:permission="android.permission.DISPATCH_NFC_MESSAGE"
+            android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <action android:name="android.nfc.action.NDEF_DISCOVERED" />
 
